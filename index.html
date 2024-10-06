@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Educational Chatbot</title>
+    <title>Educational Chatbot with Web Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,9 +21,10 @@
             <select id="subject">
                 <option value="math">Mathematics</option>
                 <option value="science">Science</option>
+                <option value="any">Any Subject</option>
             </select>
             <input type="text" id="userInput" placeholder="Type your question...">
-            <button onclick="sendMessage()">Send</button>
+            <button onclick="sendMessage()" id="sendButton">Send</button>
         </div>
     </div>
     <script src="script.js"></script>
