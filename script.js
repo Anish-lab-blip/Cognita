@@ -1,6 +1,84 @@
 // Existing knowledge base
 const knowledgeBase = {
-    // ... keep your existing knowledge base ...
+  math: {
+        elementary: {
+            keywords: {
+                'add': {
+                    simple: 'Addition is combining numbers to find their total.',
+                    detailed: `Addition is when you combine two or more numbers together to get a new number called the sum. 
+                    
+For example:
+If you have 3 apples and get 2 more apples, you add 3 + 2 to find out you now have 5 apples total.
+
+Let's practice:
+1. What is 4 + 3?
+2. If you have 6 cookies and your friend gives you 5 more, how many do you have now?`,
+                    examples: [
+                        {problem: "2 + 3 = ?", solution: "5", explanation: "Count forward 3 more after 2: 2, 3, 4, 5"},
+                        {problem: "4 + 4 = ?", solution: "8", explanation: "Double 4, or count: 4, 5, 6, 7, 8"}
+                    ]
+                },
+                'subtract': {
+                    simple: 'Subtraction is finding the difference between numbers.',
+                    detailed: `Subtraction is when you take away some things from a group to find out how many are left. 
+                    
+For example:
+If you have 5 candies and eat 2 of them, you subtract 2 from 5 (5 - 2) to find out you have 3 candies left.
+
+Let's practice:
+1. What is 7 - 3?
+2. If you have 8 stickers and give 4 to your friend, how many do you have left?`,
+                    examples: [
+                        {problem: "5 - 2 = ?", solution: "3", explanation: "Start at 5, count backward 2: 5, 4, 3"},
+                        {problem: "10 - 5 = ?", solution: "5", explanation: "Half of 10 is 5, or count backward: 10, 9, 8, 7, 6, 5"}
+                    ]
+                }
+            }
+        },
+        middle: {
+            keywords: {
+                'algebra': {
+                    simple: 'Algebra uses letters and symbols to represent numbers.',
+                    detailed: `Algebra is a branch of mathematics that uses letters (variables) to represent unknown numbers. This helps us solve problems and describe mathematical patterns.
+
+For example:
+If we know that x + 5 = 12, we can find x by subtracting 5 from both sides: x = 7
+
+Let's practice:
+1. If y + 3 = 10, what is y?
+2. If 2x = 14, what is x?`,
+                    examples: [
+                        {problem: "Solve: x + 2 = 6", solution: "x = 4", explanation: "Subtract 2 from both sides: x + 2 - 2 = 6 - 2"},
+                        {problem: "Solve: 3x = 15", solution: "x = 5", explanation: "Divide both sides by 3: 3x ÷ 3 = 15 ÷ 3"}
+                    ]
+                }
+            }
+        }
+    },
+    science: {
+        elementary: {
+            keywords: {
+                'plant': {
+                    simple: 'Plants are living things that need water and sunlight to grow.',
+                    detailed: `Plants are living organisms that can make their own food using sunlight, water, and air. This process is called photosynthesis.
+
+Key parts of a plant:
+1. Roots - Take water and nutrients from soil
+2. Stem - Carries water and food through the plant
+3. Leaves - Catch sunlight to make food
+4. Flowers - Make seeds for new plants
+
+Let's explore:
+1. What do plants need to grow?
+2. Can you name the main parts of a plant?`,
+                    examples: [
+                        {problem: "What do plants need to live?", solution: "Sunlight, water, air, and nutrients from soil"},
+                        {problem: "How do plants make food?", solution: "Through photosynthesis using sunlight, water, and air"}
+                    ]
+                }
+            }
+        }
+    }
 };
 
 // Wikipedia API endpoint
